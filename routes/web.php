@@ -9,7 +9,7 @@ Route::get('/', 'FrontController@index');
 Route::get('pencarian-laundry','FrontController@search');
 
 Auth::routes([
-    'register' => false,
+    'register' => true,
 ]);
 
 Route::middleware('auth')->group(function () {
